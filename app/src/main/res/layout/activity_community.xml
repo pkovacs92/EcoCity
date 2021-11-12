@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/screen3_raw"
+        android:scaleType="fitXY"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:rowCount="2"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/btnNews"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ico_news"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <Button
+            android:id="@+id/btnCommunity"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ico_community"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ico_map"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <Button
+            android:id="@+id/btnEvents"
+            android:layout_width="15dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ico_events"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:text="News"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:text="Community"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:text="Map"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:text="Events"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textAlignment="center"/>
+
+    </GridLayout>
+
+</RelativeLayout>
