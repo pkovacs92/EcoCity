@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class EventsActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private Button btnNews, btnCommunity, btnMap, btnEvents;
+    private Button btnNews, btnCommunity, btnMap, btnEvents, btnCreateEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +20,13 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
         btnCommunity = findViewById(R.id.btnCommunity);
         btnMap = findViewById(R.id.btnMap);
         btnEvents = findViewById(R.id.btnEvents);
+        btnCreateEvent = findViewById(R.id.btnCreateEvent);
 
         btnNews.setOnClickListener(this);
         btnCommunity.setOnClickListener(this);
         btnMap.setOnClickListener(this);
         btnEvents.setOnClickListener(this);
+        btnCreateEvent.setOnClickListener(this);
     }
 
     @Override
@@ -44,6 +46,10 @@ public class EventsActivity extends AppCompatActivity implements View.OnClickLis
         }else if(view.equals(btnEvents)){
             //redirect to events activity
             Intent intent = new Intent(EventsActivity.this, EventsActivity.class);
+            startActivity(intent);
+        }else if(view.equals(btnCreateEvent)){
+            //redirect to events activity
+            Intent intent = new Intent(EventsActivity.this, CreateEventActivity.class);
             startActivity(intent);
         }
     }
