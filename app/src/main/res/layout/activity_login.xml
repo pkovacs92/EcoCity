@@ -20,15 +20,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="426dp"
         android:background="@drawable/rounded_button"
-        android:text="Login" />
+        android:text="@string/login"
+        android:textColor="@color/black" />
 
     <Button
+        android:id="@+id/btnSignUp"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="554dp"
         android:background="@drawable/rounded_button"
-        android:text="Sign Up" />
+        android:text="@string/sign_up"
+        android:textColor="@color/black" />
 
 </RelativeLayout>
